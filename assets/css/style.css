@@ -5,65 +5,90 @@
 
 body{
     background-color: rgb(77, 75, 75);
+    margin:5px 0 0 5px;
 }
 
 a:link{
-
+    color:white;
+    text-decoration: none;
 }
-
 a:visited{
+    text-decoration: none;
     color:white;
 }
-
+a:hover{
+    color:rgb(0, 212, 212);
+}
+a:active{
+    text-decoration: none;
+    color:orange;
+}
 header{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color:rgb(32, 32, 32);
+    /* margin-right: 100px; does nothing*/
     width:100%;
     height:30%;
-    border-left: 4px solid var(--primary);
-    /* position:fixed;  */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(32, 32, 32);
+    /* position:fixed; screws up content */
+}
+#title{
+    display:flex;
+    border:black solid 5px;
+    border-radius: 10px;
+    width: 100%;
+    /* align-items: center; does nothing*/
 }
 
 header h1{
+    float:left;
+    border:black 2px solid;
+    color: white;
     display:flex;
     flex-direction: row;
     font-size: 50px;
     display:inline;
     padding:10px;
     background-color: grey;
-    /* float:left; */
+    float:left;
 }
 
 nav{
-    justify-content: flex-end;
-    align-items:center;
-    float: right;
+    flex-wrap:wrap;
+    margin-left: 30%;/* "main" (x) axis of hyperlinks*/
+    display:flex;
+    align-items: center;/* "cross" (y) axis of navbar*/
     color:white;
     font-size: 3vh;
-    margin-right:3%;
-    display:inline;
 }
 
 header li{
+    justify-content: flex-end;
     display:inline;
-    padding:30px;
+    margin:30px;
+    font-size: 30px;
 }
 
 .banner{
+    border:black solid 5px;
+    border-radius: 10px;
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/bannerImage.jpg");
     background-size: cover;
     background-position: center;
 }
-
-.flexContainer{
+main{
     display:flex;
+    flex-direction: column;
+    /* align-items: center; */
     flex-wrap:wrap;
+}
+.flexContainer{
+    border:black solid 10px;
+    margin:20px;
+    display:flex;
+    flex-direction: column;
     justify-content:center;
 }
