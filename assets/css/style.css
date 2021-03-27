@@ -1,18 +1,69 @@
-body{
-    background-color: rgb(42, 42, 42);
+:root{
+    --primary:rgb(42, 56, 112);
+    --secondary:rgb(255, 255, 255);
 }
+
+body{
+    background-color: rgb(77, 75, 75);
+}
+
+a:link{
+
+}
+
+a:visited{
+    color:white;
+}
+
 header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
     background-color:rgb(32, 32, 32);
     width:100%;
-    height:15%;
-    position:fixed;
+    height:30%;
+    border-left: 4px solid var(--primary);
+    /* position:fixed;  */
 }
+
 header h1{
-    background-color: rgb(rgb(122, 121, 121));
+    display:flex;
+    flex-direction: row;
+    font-size: 50px;
+    display:inline;
+    padding:10px;
+    background-color: grey;
+    /* float:left; */
 }
-#banner{
-    background-image: url(/assets/images/bannerImage.jpg);
-    height: 30%;
-    width:100%;
-    z-index: 1;
+
+nav{
+    justify-content: flex-end;
+    align-items:center;
+    float: right;
+    color:white;
+    font-size: 3vh;
+    margin-right:3%;
+    display:inline;
+}
+
+header li{
+    display:inline;
+    padding:30px;
+}
+
+.banner{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/bannerImage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.flexContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
