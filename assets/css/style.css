@@ -38,7 +38,7 @@ header{
     border:black solid 5px;
     border-radius: 10px;
     width: 100%;
-    /* align-items: center; does nothing*/
+    /* align-items: flex-start; does nothing */
 }
 
 header h1{
@@ -55,8 +55,9 @@ header h1{
 }
 
 nav{
-    flex-wrap:wrap;
-    margin-left: 30%;/* "main" (x) axis of hyperlinks*/
+    /* flex-wrap:wrap; */
+    margin-left: 30%; /* "main" (x) axis of hyperlinks*/
+    /* justify-self:flex-end; */
     display:flex;
     align-items: center;/* "cross" (y) axis of navbar*/
     color:white;
