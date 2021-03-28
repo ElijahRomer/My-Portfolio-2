@@ -5,7 +5,6 @@
 
 body{
     background-color: rgb(77, 75, 75);
-    margin:5px 0 0 5px;
 }
 
 a:link{
@@ -24,57 +23,62 @@ a:active{
     color:orange;
 }
 header{
-    /* margin-right: 100px; does nothing*/
+    /* STYLING */
     width:100%;
     height:30%;
+    background-color:rgb(32, 32, 32);
+    /* POSITIONING */
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(32, 32, 32);
-    /* position:fixed; screws up content */
 }
 #title{
+    /* STYLING */
+    border:black 5px solid;
+    /* POSITIONING */
     display:flex;
-    border:black solid 5px;
-    border-radius: 10px;
+    justify-content:space-between;
     width: 100%;
-    /* align-items: flex-start; does nothing */
+    height:10vh;
+
+
 }
 
 header h1{
-    float:left;
-    border:black 2px solid;
+    /* STYLING */
+    text-shadow:2px 2px 6px rgb(0, 0, 0);
+    border-right:black 5px solid;
     color: white;
-    display:flex;
-    flex-direction: row;
-    font-size: 50px;
-    display:inline;
-    padding:10px;
     background-color: grey;
+    /* POSITIONING */
+    display:flex;
     float:left;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    padding:0 1vw;
 }
 
 nav{
-    /* flex-wrap:wrap; */
-    margin-left: 30%; /* "main" (x) axis of hyperlinks*/
-    /* justify-self:flex-end; */
-    display:flex;
-    align-items: center;/* "cross" (y) axis of navbar*/
+    /* STYLING */
     color:white;
     font-size: 3vh;
+    /* POSITIONING */
+    display:flex;
+    align-items: center;/* "cross" (y) axis of navbar*/
+
 }
 
 header li{
-    justify-content: flex-end;
     display:inline;
-    margin:30px;
-    font-size: 30px;
+    margin:3px;
+    /* font-size: 25%; */
 }
 
 .banner{
     border:black solid 5px;
     border-radius: 10px;
-    height: 200px;
+    height: 20vh;
     width: 100%;
     background-image: url("../images/bannerImage.jpg");
     background-size: cover;
