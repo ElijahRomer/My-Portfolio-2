@@ -37,6 +37,7 @@ header{
 #title{
     /* STYLING */
     border:black 5px solid;
+    font-family:'Ubuntu', serif, sans-serif; /*Ubuntu font imported from google fonts (https://fonts.google.com/)*/
     /* POSITIONING */
     display:flex;
     justify-content:space-between;
@@ -47,7 +48,8 @@ header{
 }
 header h1{
     /* STYLING */
-    text-shadow:2px 2px 6px rgb(0, 0, 0);
+    font-size: 3vmax;
+    text-shadow:8px 8px 6px rgb(0, 0, 0);
     border-right:black 5px solid;
     color: white;
     background-color: grey;
@@ -56,14 +58,13 @@ header h1{
     float:left;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
     padding:0 1vw;
 }
 
 nav{
     /* STYLING */
     color:white;
-    font-size: 3vh;
+    font-size: 2vmax;
     /* POSITIONING */
     padding-right:2%;
     display:flex;
@@ -77,7 +78,7 @@ header li{
 }
 
 .bannerImage{
-    border:black solid 5px;
+    border-bottom:black solid 5px;
     border-radius: 10px;
     height: 20vh;
     width: 100%;
@@ -90,18 +91,58 @@ header li{
 
 main{
     display:grid;
-    grid-template-columns:50fr 50fr;
+    font-family:'Ubuntu', serif, sans-serif; /*Ubuntu font imported from google fonts (https://fonts.google.com/)*/
+    /* border-spacing: 5px 0; */
+    /* grid-template-columns:1fr 5fr; */
     /* flex-direction: column; */
     /* align-items: center; */
     /* flex-wrap:wrap; */
+    
 }
-.gridContainer{
-    border:black solid 10px;
-    margin:20px;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-}
-.gridContainer:hover{
+main > section:hover{
     border:rgb(0, 212, 212) solid 10px;
+}
+
+main > section:active{
+    border:orange solid 10px;
+}
+
+main > section{
+    /* STYLING */
+    border:black solid 10px; 
+    border-spacing: 5px;
+    color:white;
+    /* POSITIONING */
+    display:grid;
+    grid-template-columns: 1fr 5fr ;
+    padding:20px 0;
+    margin: 0 auto;
+    /* justify-content:center; */
+    align-items: center;
+    height: ;
+
+}
+.sectionContent{
+    /* list-style-type:square; */
+    margin-left: 5vw;
+}
+main > section > h2{
+    /* STYLING */
+    color:black;
+    font-size:3vmin;
+    text-shadow:2px 2px 6px rgb(0, 0, 0);
+    font-weight: bolder;
+    background-color: cyan;
+    border-top: black 3px solid;
+    border-right: black 3px solid;
+    border-bottom: black 3px solid; 
+    /* POSITIONING */
+    display:flex;
+    justify-content: center;
+    margin-right: 3vw;
+}
+main > section > p{
+    display:flex;
+    grid-template-columns: 2fr;
+
 }
