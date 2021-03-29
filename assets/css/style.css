@@ -113,16 +113,9 @@ main > section{
     margin: 2vmin;
     align-items: center;
 }
-/* main > section:hover{
-    border:rgb(0, 212, 212) solid 10px;
-} */
-
-main > section:active{
-    border:orange solid 10px;
+main > section:active{/*FOR SOME REASON I LOSE THE SECTION H2 FORMATTING WHEN I REMOVE THIS*/
+    border:black solid 10px;
 }
-/* main > section > .headerAlign{
-
-} */
 main > section > h2{
     /* STYLING */
     color:black;
@@ -154,42 +147,61 @@ main > section > p{
     grid-template-rows: 1fr 1fr;
 }
 #workBoxes > #a{
+    /* STYLING */
     background-image: url("../images/computerDesk.jpg");
     background-size: cover;
+    opacity: 0.3;
+    border:black 10px solid;
+    font-weight: bolder;
+    /* POSITIONING */
     display: flex;
     flex-wrap: wrap;
     height:30vh;
     width:30vw;
-    background-image: url;
-    border:black 10px solid;
     margin:5px;
     padding:2vh 2vw;
 }
 #workBoxes > #b{
+    /* STYLING */
     background-image: url("../images/largeLeafWhiteBackground.jpg");
     background-size: cover;
+    opacity: 0.3;
+    border:black 10px solid;
+    color: grey;
+    font-weight: bolder;
+    /* POSITIONING */
     display: flex;
     flex-wrap: wrap;
     height:30vh;
     width:30vw;
-    border:black 10px solid;
     margin:5px;
     padding:2vh 2vw;
 }
 #workBoxes > #c{
+    /* STYLING */
     background-image: url("../images/snowboarderOnMountain.jpg");
     background-size: cover;
+    opacity: 0.3;
+    border:black 10px solid;
+    color: black;
+    font-weight: bolder;
+    /* POSITIONING */
     display: flex;
     flex-wrap: wrap;
     height:30vh;
     width:30vw;
-    border:black 10px solid;
     margin:5px;
     padding:2vh 2vw;
 }
 #workBoxes > #d{
+    /* STYLING */
     background-image: url("../images/womanSittingOnRailCar.jpg");
     background-size: cover;
+    opacity: 0.3;
+    border:black 10px solid;
+    color: black;
+    font-weight: bolder;
+    /* POSITIONING */
     display: flex;
     flex-wrap: wrap;
     height:30vh;
@@ -198,7 +210,39 @@ main > section > p{
     margin:5px;
     padding:2vh 2vw;
 }
+#workBoxes > #a:hover{
+    opacity: 1;
+    border:rgb(0, 202, 202) 10px solid;
+}
+#workBoxes > #b:hover{
+    opacity: 1;
+    border:rgb(0, 202, 202) 10px solid;
+}
+#workBoxes > #c:hover{
+    opacity: 1;
+    border:rgb(0, 202, 202) 10px solid;
+}
+#workBoxes > #d:hover{
+    opacity: 1;
+    border:rgb(0, 202, 202) 10px solid;
+}
+#workBoxes > #a:active{
+    opacity: 1;
+    border:orange 10px solid;
+}
+#workBoxes > #b:active{
+    opacity: 1;
+    border:orange 10px solid;
+}
+#workBoxes > #c:active{
+    opacity: 1;
+    border:orange 10px solid;
+}
+#workBoxes > #d:active{
+    opacity: 1;
+    border:orange 10px solid;
 
-#workBoxes > div:hover{
-    border:rgb(0, 212, 212) solid 10px;
+
+#contactMe > .sectionContent{
+
 }
