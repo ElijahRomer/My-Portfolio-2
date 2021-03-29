@@ -120,9 +120,9 @@ main > section{
 main > section:active{
     border:orange solid 10px;
 }
-main > section > .headerAlign{
+/* main > section > .headerAlign{
 
-}
+} */
 main > section > h2{
     /* STYLING */
     color:black;
@@ -153,7 +153,21 @@ main > section > p{
     grid-template-columns:1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-#workBoxes > div{
+#workBoxes > #a{
+    background-image: url("../images/computerDesk.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height:30vh;
+    width:30vw;
+    background-image: url;
+    border:black 10px solid;
+    margin:5px;
+    padding:2vh 2vw;
+}
+#workBoxes > #b{
+    background-image: url("../images/largeLeafWhiteBackground.jpg");
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     height:30vh;
@@ -162,6 +176,29 @@ main > section > p{
     margin:5px;
     padding:2vh 2vw;
 }
+#workBoxes > #c{
+    background-image: url("../images/snowboarderOnMountain.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height:30vh;
+    width:30vw;
+    border:black 10px solid;
+    margin:5px;
+    padding:2vh 2vw;
+}
+#workBoxes > #d{
+    background-image: url("../images/womanSittingOnRailCar.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height:30vh;
+    width:30vw;
+    border:black 10px solid;
+    margin:5px;
+    padding:2vh 2vw;
+}
+
 #workBoxes > div:hover{
     border:rgb(0, 212, 212) solid 10px;
 }
