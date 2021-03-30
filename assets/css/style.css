@@ -460,7 +460,8 @@ main > section > p{
         margin: 2vmin;
         align-items: start;
     }
-    .sectionContent{
-
+    #resumePDF{
+        width: 80%;
+        height :80%;
     }
 }
