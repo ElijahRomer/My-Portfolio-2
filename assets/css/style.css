@@ -8,6 +8,9 @@ body{
 }
 
                             /*--------------BEGIN HEADER--------------*/
+a{
+    text-align: center;
+}
   
 .nav:link{
     color:white;
@@ -65,7 +68,7 @@ header h1{
 nav{
     /* STYLING */
     color:white;
-    font-size: 2.0 vmax;
+    font-size: 2.0vmax;
     background-color:rgb(32, 32, 32);
     /* POSITIONING */
     /* padding-right:2%; */
@@ -121,6 +124,7 @@ main > section > h2{
     /* STYLING */
     color:black;
     font-size:4vmin;
+    text-align: center;
     text-shadow:2px 2px 6px rgb(0, 0, 0);
     font-weight: bolder;
     background-color: cyan;
@@ -141,6 +145,7 @@ main > section > p{
 .sectionContent{
     /* list-style-type:square; */
     margin:0 5vw;
+    font-size: 3vmin;
 }
 
 
@@ -160,6 +165,7 @@ main > section > p{
 }
 
 #selfie{
+    align-self: ;
     height:50vmin;
     width:40vmin;
     padding:0;
@@ -222,6 +228,9 @@ main > section > p{
                         "a b"
                         "c d";
 }
+
+/*********START WORKBOX LINK PSEUDO-ELEMENT FORMATTING*********/
+
 #firstHomework:link{
     color:white;
     text-decoration: none;
@@ -297,6 +306,9 @@ main > section > p{
     text-decoration: none;
     color:white;
 }
+
+/*********END WORKBOX LINK PSEUDO-ELEMENT FORMATTING*********/
+
 #workBoxes > #firstHomework{
     /* STYLING */
     background-image: url("../images/Homework-1-screenshot.jpg");
@@ -304,6 +316,7 @@ main > section > p{
     opacity: 0.3;
     border:black 10px solid;
     font-weight: bolder;
+    font-size: 2vmin;
     /* POSITIONING */
     grid-area: firstHomework;
     display: flex;
@@ -320,6 +333,7 @@ main > section > p{
     opacity: 0.3;
     border:black 10px solid;
     font-weight: bolder;
+    font-size: 2vmin;
     /* POSITIONING */
     grid-area: a;
     display: flex;
@@ -337,6 +351,7 @@ main > section > p{
     border:black 10px solid;
     color: grey;
     font-weight: bolder;
+    font-size: 2vmin;
     /* POSITIONING */
     grid-area: b;
     display: flex;
@@ -354,6 +369,7 @@ main > section > p{
     border:black 10px solid;
     color: black;
     font-weight: bolder;
+    font-size: 2vmin;
     /* POSITIONING */
     grid-area: c;
     display: flex;
@@ -371,6 +387,7 @@ main > section > p{
     border:black 10px solid;
     color: black;
     font-weight: bolder;
+    font-size: 2vmin;
     /* POSITIONING */
     grid-area: d;
     display: flex;
@@ -442,5 +459,8 @@ main > section > p{
         padding:20px 0;
         margin: 2vmin;
         align-items: start;
+    }
+    .sectionContent{
+
     }
 }
