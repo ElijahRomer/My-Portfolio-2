@@ -9,18 +9,18 @@ body{
 
                             /*--------------BEGIN HEADER--------------*/
   
-a:link{
+.nav:link{
     color:white;
     text-decoration: none;
 }
-a:visited{
+.nav:visited{
     text-decoration: none;
     color:white;
 }
-a:hover{
+.nav:hover{
     color:rgb(0, 212, 212);
 }
-a:active{
+.nav:active{
     text-decoration: none;
     color:orange;
 }
@@ -65,12 +65,14 @@ header h1{
 nav{
     /* STYLING */
     color:white;
-    font-size: 2vmax;
+    font-size: 2.0 vmax;
     background-color:rgb(32, 32, 32);
     /* POSITIONING */
-    padding-right:2%;
+    /* padding-right:2%; */
     display:flex;
-    align-items: center;/* "cross" (y) axis of navbar*/
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center;"cross" (y) axis of navbar */
 
 }
 
@@ -118,7 +120,7 @@ main > section:active{/*FOR SOME REASON I LOSE THE SECTION H2 FORMATTING WHEN I 
 main > section > h2{
     /* STYLING */
     color:black;
-    font-size:3vmin;
+    font-size:4vmin;
     text-shadow:2px 2px 6px rgb(0, 0, 0);
     font-weight: bolder;
     background-color: cyan;
@@ -154,12 +156,12 @@ main > section > p{
     grid-template-rows: 100%;
     padding:20px 0;
     margin: 2vmin;
-    align-items: center;
+    align-items: start;
 }
 
 #selfie{
-    height:100%;
-    width:100%;
+    height:50vmin;
+    width:40vmin;
     padding:0;
 }
 
@@ -174,7 +176,7 @@ main > section > p{
     grid-template-rows: 100%;
     padding:20px 0;
     margin: 2vmin;
-    align-items: center;
+    align-items: start;
 }
 
 
@@ -190,7 +192,7 @@ main > section > p{
     grid-template-rows: 100%;
     padding:20px 0;
     margin: 2vmin;
-    align-items: center;
+    align-items: start;
 }
 
 
@@ -206,15 +208,110 @@ main > section > p{
     grid-template-rows: 100%;
     padding:20px 0;
     margin: 2vmin;
-    align-items: center;
+    align-items: start;
 }
 
 
 
 #workBoxes{
+    padding:1vw;
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"firstHomework firstHomework"
+                        "a b"
+                        "c d";
+}
+#firstHomework:link{
+    color:white;
+    text-decoration: none;
+}
+#firstHomework:visited{
+    text-decoration: none;
+    color:white;
+}
+#firstHomework:hover{
+    color:white;
+}
+#firstHomework:active{
+    text-decoration: none;
+    color:white;
+}
+#a:link{
+    color:white;
+    text-decoration: none;
+}
+#a:visited{
+    text-decoration: none;
+    color:white;
+}
+#a:hover{
+    color:white;
+}
+#a:active{
+    text-decoration: none;
+    color:white;
+}
+#b:link{
+    color:white;
+    text-decoration: none;
+}
+#b:visited{
+    text-decoration: none;
+    color:white;
+}
+#b:hover{
+    color:white;
+}
+#b:active{
+    text-decoration: none;
+    color:white;
+}
+#c:link{
+    color:white;
+    text-decoration: none;
+}
+#c:visited{
+    text-decoration: none;
+    color:white;
+}
+#c:hover{
+    color:white;
+}
+#c:active{
+    text-decoration: none;
+    color:white;
+}
+#d:link{
+    color:white;
+    text-decoration: none;
+}
+#d:visited{
+    text-decoration: none;
+    color:white;
+}
+#d:hover{
+    color:white;
+}
+#d:active{
+    text-decoration: none;
+    color:white;
+}
+#workBoxes > #firstHomework{
+    /* STYLING */
+    background-image: url("../images/Homework-1-screenshot.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    border:black 10px solid;
+    font-weight: bolder;
+    /* POSITIONING */
+    grid-area: firstHomework;
+    display: flex;
+    flex-wrap: wrap;
+    height:30vh;
+    width:auto;
+    margin:5px;
+    padding:2vh 2vw;
 }
 #workBoxes > #a{
     /* STYLING */
@@ -224,10 +321,11 @@ main > section > p{
     border:black 10px solid;
     font-weight: bolder;
     /* POSITIONING */
+    grid-area: a;
     display: flex;
     flex-wrap: wrap;
     height:30vh;
-    width:30vw;
+    width:auto;
     margin:5px;
     padding:2vh 2vw;
 }
@@ -240,10 +338,11 @@ main > section > p{
     color: grey;
     font-weight: bolder;
     /* POSITIONING */
+    grid-area: b;
     display: flex;
     flex-wrap: wrap;
     height:30vh;
-    width:30vw;
+    width:auto;
     margin:5px;
     padding:2vh 2vw;
 }
@@ -256,10 +355,11 @@ main > section > p{
     color: black;
     font-weight: bolder;
     /* POSITIONING */
+    grid-area: c;
     display: flex;
     flex-wrap: wrap;
     height:30vh;
-    width:30vw;
+    width:auto;
     margin:5px;
     padding:2vh 2vw;
 }
@@ -272,13 +372,18 @@ main > section > p{
     color: black;
     font-weight: bolder;
     /* POSITIONING */
+    grid-area: d;
     display: flex;
     flex-wrap: wrap;
     height:30vh;
-    width:30vw;
+    width:auto;
     border:black 10px solid;
     margin:5px;
     padding:2vh 2vw;
+}
+#workBoxes > #firstHomework:hover{
+    opacity: 1;
+    border:rgb(0, 202, 202) 10px solid;
 }
 #workBoxes > #a:hover{
     opacity: 1;
@@ -295,6 +400,10 @@ main > section > p{
 #workBoxes > #d:hover{
     opacity: 1;
     border:rgb(0, 202, 202) 10px solid;
+}
+#workBoxes > #firstHomework:active{
+    opacity: 1;
+    border:orange 10px solid;
 }
 #workBoxes > #a:active{
     opacity: 1;
@@ -315,9 +424,23 @@ main > section > p{
 
 @media screen and (max-width:768px) {
     #workBoxes{
+        padding:1vw;
         display:grid;
-        grid-template-columns:80%;
-        grid-template-rows: 1fr;
-        justify-items: center;
-
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(5) 1fr;
+        grid-template-areas:"firstHomework "
+                            "a" 
+                            "b"
+                            "c" 
+                            "d";
+    }
+    #aboutMeContainer{
+        /* POSITIONING */
+        display:flex;
+        /* grid-template-columns: 16.6667% 55.5555% 27.7777%; */
+        flex-wrap: wrap;
+        padding:20px 0;
+        margin: 2vmin;
+        align-items: start;
+    }
 }
